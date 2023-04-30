@@ -1,0 +1,32 @@
+.hero {
+	&__wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__content {
+		max-width: 720px;
+	}
+
+	&__title {
+		@include adaptive-font(54, 25);
+		margin: 0;
+		margin-bottom: 20px;
+		font-weight: 700;
+		color: var(--main-text-color);
+	}
+
+	&__text {
+		margin-bottom: 20px;
+	}
+
+	&__photo {
+		width: 320px;
+		height: 320px;
+		background-image: url('@img/hero/photo.png');
+		background-position: center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+}
