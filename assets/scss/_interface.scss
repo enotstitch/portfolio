@@ -1,3 +1,5 @@
+@use 'vars' as *;
+@use 'mixins/adaptive-font' as *;
 @use './chunk/burger-menu';
 
 .logo {
@@ -49,5 +51,56 @@
 		&:hover {
 			opacity: 0.5;
 		}
+	}
+}
+
+.section {
+	padding: 80px 0;
+}
+
+.title {
+	margin: 0;
+	font-weight: 900;
+	line-height: var(--line-height);
+	text-align: center;
+	@include adaptive-font(40, 30);
+}
+
+.text {
+	margin: 0;
+	font-weight: 300;
+	line-height: 145%;
+	@include adaptive-font(22, 18);
+}
+
+.link {
+	display: inline-block;
+	border: 3px solid var(--accent-color);
+	border-radius: 10px;
+	padding: 15px 30px;
+	font-weight: 300;
+	color: var(--main-text-color);
+	background-color: var(--accent-color);
+	transition: all 0.3s;
+	@include adaptive-font(22, 18);
+
+	&:hover {
+		background-color: transparent;
+	}
+}
+
+.underscore {
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: 50%;
+		bottom: 10%;
+		z-index: -1;
+		width: 102%;
+		height: 8px;
+		background-color: var(--accent-color);
+		transform: translateX(50%);
 	}
 }

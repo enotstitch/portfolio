@@ -1,5 +1,5 @@
-@use 'mixins/adaptive-font' as *;
 @use 'vars' as *;
+@use 'mixins/adaptive-font' as *;
 
 html {
 	height: 100%;
@@ -18,9 +18,8 @@ body {
 	height: 100%;
 	font-family: var(--font-main);
 	font-weight: 400;
-	line-height: var(--line-height);
-	color: var(--dark-color);
-	background-color: var(--light-color);
+	color: var(--main-text-color);
+	background-color: var(--bg-color);
 	@include adaptive-font(18, 16);
 
 	&.lock {

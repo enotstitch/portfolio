@@ -1,3 +1,3 @@
-import { initHeader } from './modules/header/header.js';
+// import { initHeader } from './modules/header/header.js';
 
-initHeader();
+// initHeader();

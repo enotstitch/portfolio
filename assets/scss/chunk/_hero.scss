@@ -1,0 +1,33 @@
+@use 'mixins/adaptive-font' as *;
+
+.hero {
+	&__wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 40px;
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 5px;
+		max-width: fit-content;
+		font-weight: 900;
+		color: var(--main-text-color);
+		@include adaptive-font(54, 22);
+	}
+
+	&__text {
+		margin-bottom: 50px;
+		max-width: 750px;
+	}
+
+	&__photo {
+		width: 100%;
+		max-width: 320px;
+
+		@media (max-width: 992px) {
+			display: none;
+		}
+	}
+}
