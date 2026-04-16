@@ -6,7 +6,6 @@
 	"attr-unsafe-chars": true,
 	"attr-value-double-quotes": true,
 	"attr-value-not-empty": true,
-	"attr-sorted": true,
 	"attr-whitespace": true,
 	"alt-require": true,
 	"input-requires-label": true,
