@@ -1,0 +1,13 @@
+.footer {
+	border-top: 1px solid var(--border-color);
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	&__copy {
+		display: block;
+		margin: auto;
+		width: fit-content;
+		font-size: 12px;
+		opacity: 0.4;
+	}
+}
