@@ -28,6 +28,8 @@
 	}
 
 	&__name {
+		margin: 0;
+		font-family: var(--font-main);
 		font-weight: 500;
 		font-size: 18px;
 	}
@@ -51,7 +53,7 @@
 		padding: 2px 10px;
 		font-weight: 500;
 		font-size: 11px;
-		line-height: var(--line-height);
+		line-height: 140%;
 		color: var(--accent-color);
 	}
 

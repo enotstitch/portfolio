@@ -10,15 +10,16 @@
 
 	&__title {
 		margin: 0;
-		margin-bottom: 5px;
+		margin-bottom: 20px;
 		max-width: fit-content;
+		font-family: var(--font-main);
 		font-weight: 900;
 		color: var(--main-text-color);
 		@include adaptive-font(54, 22);
 	}
 
 	&__text {
-		margin-bottom: 50px;
+		margin-bottom: 60px;
 		max-width: 750px;
 	}
 
